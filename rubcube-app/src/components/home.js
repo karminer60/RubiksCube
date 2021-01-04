@@ -1,12 +1,22 @@
 import React from 'react';
+import Cube from 'Cube.js'
 
 
-function Home(props){
+const Home = () => {
 
 return(
-    <div >
-
+    <div>
+      <RubiksCube> Solve the Rubik's Cube </RubiksCube>  
     </div>
 )
 
 }
+
+//maptStateToProps gets state from the store
+const mapStateToProps = state => {
+    return{
+
+    }
+}
+
+export default connect(mapStateToProps, ) (Home)
