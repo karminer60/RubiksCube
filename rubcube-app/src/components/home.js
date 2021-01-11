@@ -1,10 +1,12 @@
-import React from 'react';
-import Cube from 'Cube.js'
+import React, {useState} from 'react';
+import Cube from 'Cube.js';
+
 
 
 const Home = () => {
 
-return(
+  const [state, setState] = useState(null)
+  return(
     <div>
       <RubiksCube> Solve the Rubik's Cube </RubiksCube>  
     </div>
