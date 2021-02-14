@@ -1,14 +1,19 @@
 import React, {useState} from 'react'
+import CubeDetails from './CubeDetails.js'
+import { connect } from 'react-redux'
 
 
 const Cube = () => {
-    const [state, setState] = usetState(null)
+    const [state, setState] = useState(null)
     return(
         <div>
-            {/*I have to build a 3D object with three axis, each with three cube sides*/}
-            <button id= 'initial-botton' onClick= { () => toggle()}>
+            <div>
+                <CubeDetails/> 
+            </div>
+            <button /*id= 'initial-botton' onClick= { () => toggle()}*/>
                 Button   
             </button>
+
 
         </div>
     )

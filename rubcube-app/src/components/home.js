@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import Cube from 'Cube.js';
-
+import Cube from './Cube';
+import { connect } from 'react-redux'
 
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
   const [state, setState] = useState(null)
   return(
     <div>
-      <RubiksCube> Solve the Rubik's Cube </RubiksCube>  
+      <Cube> Solve the Rubik's Cube </Cube>  
     </div>
 )
 
