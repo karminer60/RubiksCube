@@ -10,7 +10,7 @@ const Cube = () => {
             <div>
                 <CubeDetails/> 
             </div>
-            <button /*id= 'initial-botton' onClick= { () => toggle()}*/>
+            <button id= 'initial-botton' >
                 Button   
             </button>
 
