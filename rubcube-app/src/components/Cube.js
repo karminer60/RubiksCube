@@ -9,22 +9,22 @@ const Cube = () => {
         <div>
             <h2> Cube Visualization Goes Here </h2>
             
-            <div id="cubeSide1" style={{ paddingLeft: "44.5%" }}>
+            <div id="cubeSide1" style={{ paddingLeft: "44.5%", position:'fixed', marginTop: '100px'}}>
                 <CubeDetails/>   
-            </div>
-            <div id="cubeSide2" style={{ paddingLeft: "44.5%", transform: `skew(20deg, 20deg)`}}>
-                <CubeDetails/> 
-            </div>
+            
+                <div id="cubeSide2" style={{ paddingLeft: "44.5%", transform: `skew(-70deg, 0deg) scale(1, 0.25) translateX(-680px) translateY(-970px) `}}>
+                    <CubeDetails/> 
+                </div>
 
-            <div id="cubeSide3" style={{ paddingLeft: "44.5%", transform: `skew(20deg, 20deg)`}}>
-                <CubeDetails/> 
-            </div>
+                <div id="cubeSide3" style={{ paddingLeft: "44.5%", transform: `skew(0deg, -20deg)  scale(0.75, 1) translateX(100px) translateY(-273px)`}}>
+                    <CubeDetails/> 
+                </div>
                 
             
-            <button id= 'initial-botton' >
-                Button   
-            </button>
-
+                <button id= 'initial-botton' >
+                    Button   
+                </button>
+            </div>
 
         </div>
     )
