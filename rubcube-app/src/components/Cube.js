@@ -20,6 +20,17 @@ const Cube = () => {
                     <CubeDetails/> 
                 </div>
                 
+                <div id="cubeSide4" style={{transform: 'translate(500px, -450px)'}}>
+                    <CubeDetails/> 
+                </div>
+
+                <div id="cubeSide5" style={{transform: 'translate(-400px, -600px)'}}>
+                    <CubeDetails/> 
+                </div>
+
+                <div id="cubeSide6" style={{transform: 'translate(20px, -500px)'}}>
+                    <CubeDetails/> 
+                </div>
             
                 <button id= 'initial-botton' >
                     Button   
