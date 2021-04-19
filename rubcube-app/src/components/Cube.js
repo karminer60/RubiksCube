@@ -1,15 +1,20 @@
 import React, {useState} from 'react'
 import CubeDetails from './CubeDetails.js'
 import { connect } from 'react-redux'
-
+/*I have to build a 3D object with three axis
+ How can I build this: 
+    1. Build x, y, z axes
+        a. create 2D representation
+    2. Add three 2D squares to each axis*/
 
 const Cube = () => {
     const [state, setState] = useState(null)
     return(
-        <div>
-            <h2> Cube Visualization Goes Here </h2>
+        <div id="cubeVisualization" >
             
-            <div id="cubeSide1" style={{ paddingLeft: "44.5%", position:'fixed', marginTop: '100px'}}>
+            <h2> Rubik's Cube </h2>
+            
+            <div id="cubeSide1AndVisualizationBox" style={{ paddingLeft: "44.5%", position:'fixed', marginTop: '100px'}}>
                 <CubeDetails/>   
             
                 <div id="cubeSide2" style={{ paddingLeft: "44.5%", transform: `skew(-70deg, 0deg) scale(1, 0.25) translateX(-680px) translateY(-970px) `}}>
