@@ -37,7 +37,7 @@ const Cube = () => {
                     <CubeDetails/> 
                 </div>
             
-                <button id= 'initial-botton' >
+                <button id= 'test-button' >
                     Button   
                 </button>
             </div>
