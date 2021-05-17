@@ -5,7 +5,13 @@ import { connect } from 'react-redux'
  How can I build this: 
     1. Build x, y, z axes
         a. create 2D representation
-    2. Add three 2D squares to each axis*/
+    2. Add three 2D squares to each axis
+    
+Build the logic to make moves and the actual move options
+How will I do this:
+    1. Create a button that allows the user to choose between:
+        a. Twelve possible moves
+        */
 
 const Cube = () => {
     const [state, setState] = useState(null)
@@ -39,7 +45,7 @@ const Cube = () => {
             
                 <button id= 'test-button' >
                     Button   
-                </button>
+                </button> 
             </div>
 
         </div>

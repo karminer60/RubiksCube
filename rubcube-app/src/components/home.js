@@ -8,7 +8,9 @@ const Home = () => {
   const [state, setState] = useState(null)
   return(
     <div>
+
         <Cube> Solve the Rubik's Cube </Cube>  
+        
     </div>
 )
 
