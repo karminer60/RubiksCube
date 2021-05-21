@@ -1,30 +1,33 @@
+//Initial data stored here
+
 import {
-    GET_CITIES_START,
-    GET_CITIES_SUCCESS,
-    GET_CITIES_FAILURE,
+    GET_SIDES_START,
+    GET_SIDES_SUCCESS,
+    GET_SIDES_FAILURE,
     
   } from '../actions/generalActions'
   
   
   const initialApplicationState = {
     isLoading: false,
-    favoriteLoading: false,
-  
-    errorMessage: null,
-    compareErrorMessage: null,
-    cities: [],
-  
-    comparingCities: [],
+    sides = 
+    {sideOne: [[],[],[]],
+      sideTwo: [[],[],[]],
+      sideThree: [[],[],[]],
+      sideFour: [[],[],[]],
+      sideFive: [[],[],[]],
+      sideSix : [[],[],[]],
+    }
   }
   
   export default function reducer(state = initialApplicationState, action) {
     switch (action.type) {
-      case GET_CITIES_START:
+      case GET_SIDES_START:
         return { ...state, isLoading: true, errorMessage: null }
-      case GET_CITIES_SUCCESS:
+      case GET_SIDES_SUCCESS:
         return {
           ...state,
-          cities: action.payload,
+          sides: action.payload,
           isLoading: false,
           errorMessage: null,
         }
