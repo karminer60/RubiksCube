@@ -1,21 +1,13 @@
 import React, {useState} from 'react'
 import CubeDetails from './CubeDetails.js'
 import { connect } from 'react-redux'
+import {updateSides} from '../store/actions/generalActions'
 /*
 I have to build a 3D object with three axis
 How can I build this: 
     1. Build x, y, z axes
         a. create 2D representation
     2. Add three 2D squares to each axis
-    
-Build the logic to make moves and the actual move options
-How will I do this:
-    1. Create buttons that allow the user to choose between:
-        a. 18 possible moves possible moves
-            i. Three dimensions * three rows * two ways to move = 18
-                a. change color of all two dimensional squares for each move
-                    1. create algorithm that changes multiple squares' colors according to move
-                        a. store each side's current colors in state - do this by creating six arrays (six sides) with 9 squares (3 by 3)
 */
 
 const Cube = () => {
@@ -140,5 +132,7 @@ const mapStateToProps = state => {
 
     }
 }
-//function currying and export the component 
-export default connect(mapStateToProps,)(Cube)
+//function currying and export the component
+//when we use action creators in our connected components, we first import the action creator
+//Then we pass the action creator into the connect function
+export default connect(mapStateToProps, {updateSides : updateSides} )(Cube)
